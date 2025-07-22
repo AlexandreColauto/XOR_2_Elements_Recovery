@@ -91,15 +91,15 @@ function recover_u_and_v() {
     const res = xor(total) ^ xor(missing) // res =  u ^ v
     const idx = lsb(res) // find on wich index they differ, since the least significant bit is the first bit with value of 1, and we know that for the XOR operation result in 1 the bits must be different.
     console.log(res)
-    console.log(idx)
-    const P0t = filter_by_bit_0(total, idx)
+    console.log(idx) 
+    const P0t = filter_by_bit_0(total, idx) 
     const P0a = filter_by_bit_0(missing, idx)
     console.log("P0t: ", P0t)
     console.log("P0a: ", P0a)
-    const u = xor(P0t) ^ xor(P0a)
+    const u = xor(P0t) ^ xor(P0a) // first missing element
     const P1t = filter_by_bit_1(total, idx)
     const P1a = filter_by_bit_1(missing, idx)
-    const v = xor(P1t) ^ xor(P1a)
+    const v = xor(P1t) ^ xor(P1a) // second missing element
     console.log("P1t: ", P1t)
     console.log("P1a: ", P1a)
     console.log("u: ", u)

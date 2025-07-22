@@ -3,7 +3,7 @@ How to recover 2 missing integers from a list using XOR operations.
 
 Source [Xor trick](https://florian.github.io//xor-trick/).
 
-x ^ y = r
+XOR Truth table (x ^ y)
 ```
 0 ^ 0 = 0
 0 ^ 1 = 1

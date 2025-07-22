@@ -4,11 +4,12 @@ How to recover 2 missing integers from a list using XOR operations.
 Source [Xor trick](https://florian.github.io//xor-trick/).
 
 x ^ y = r
-
+```
 0 ^ 0 = 0
 0 ^ 1 = 1
 1 ^ 0 = 1
 1 ^ 1 = 0
+```
 
 By leveraging 3 important properties of XOR operations we can recover a missing integer of a list.
 

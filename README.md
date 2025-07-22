@@ -101,6 +101,7 @@ function recover_u_and_v() {
     const P1t = filter_by_bit_1(total, idx)
     const P1a = filter_by_bit_1(missing, idx)
     const v = xor(P1t) ^ xor(P1a) // second missing element
+    //const v = u ^ res  //this works too
     console.log("P1t: ", P1t)
     console.log("P1a: ", P1a)
     console.log("u: ", u)
